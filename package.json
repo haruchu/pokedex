@@ -2,5 +2,10 @@
   "name": "pokedex",
   "version": "1.0.0",
   "main": "index.tsx",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": "git@github.com:haruchu/pokedex.git",
+  "author": "haru <haruki6180@gmail.com>",
+  "dependencies": {
+    "react": "^18.2.0"
+  }
 }
