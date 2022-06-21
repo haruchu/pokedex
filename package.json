@@ -7,5 +7,8 @@
   "author": "haru <haruki6180@gmail.com>",
   "dependencies": {
     "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.73.0"
   }
 }
