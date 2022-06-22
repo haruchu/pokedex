@@ -40,6 +40,11 @@
     "build": "webpack",
     "lint": "eslint src",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "fix": "run-s fix:*",
+    "lint:eslint": "eslint './src/**/*.{ts,tsx}'",
+    "lint:prettier": "prettier './src/**/*.{ts,tsx}' --check",
+    "fix:eslint": "eslint --fix './src/**/*.{ts,tsx}'",
+    "fix:prettier": "prettier './src/**/*.{ts,tsx}' --write"
   }
 }
