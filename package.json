@@ -19,6 +19,7 @@
   },
   "scripts": {
     "serve": "webpack serve",
-    "build": "webpack"
+    "build": "webpack",
+    "lint": "eslint src"
   }
 }
