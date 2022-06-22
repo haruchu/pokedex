@@ -5,7 +5,5 @@ type ExampleProps = {
 };
 
 export const Example = ({ text }: ExampleProps) => {
-  return (
-    <>{text}</>
-  );
+  return <>{text}</>;
 };
