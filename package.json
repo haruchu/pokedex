@@ -51,6 +51,19 @@
     "lint:eslint": "eslint './src/**/*.{ts,tsx}'",
     "lint:prettier": "prettier './src/**/*.{ts,tsx}' --check",
     "fix:eslint": "eslint --fix './src/**/*.{ts,tsx}'",
-    "fix:prettier": "prettier './src/**/*.{ts,tsx}' --write"
+    "fix:prettier": "prettier './src/**/*.{ts,tsx}' --write",
+    "deploy": "firebase deploy"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
