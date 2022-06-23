@@ -15,7 +15,9 @@
     "typeRoots": [
       "types",
       "node_modules/@types"
-    ]
+    ],
+    "esModuleInterop": true,
+    "resolveJsonModule": true
   },
   "include": [
     "src/**/*",
