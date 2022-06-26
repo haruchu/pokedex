@@ -12,11 +12,11 @@ module.exports = {
   },
   module: {
     rules: [{ test: /\.ts|tsx$/, use: "ts-loader" },
-    {
-      test: /\.(png|jpg)$/,
-      loader: 'url-loader',
-      options: {},
-  }],
+      {
+        test: /\.(png|jpg|gif)$/,
+        loader: 'file-loader',
+        options: {},
+    }],
   },
   resolve: {
     extensions: ['.tsx', '.ts',".js"],
