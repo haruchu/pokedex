@@ -16,5 +16,5 @@ export const TYPE_COLOR = {
   DRAGON: "#7b68ee",
   DARK: "#483d8b",
   STEEL: "#808080",
-  FAIRY: "#ffc0cb"
-}
+  FAIRY: "#ffc0cb",
+};

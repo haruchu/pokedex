@@ -1,7 +1,7 @@
 import { ComponentStory } from "@storybook/react";
 import React from "react";
 import { Example } from "./index";
-import Data from "../../data/pokemon-data.json"
+import Data from "../../data/pokemon-data.json";
 
 export default {
   title: "example/Example",

@@ -1,6 +1,5 @@
-import { getStorage } from "@firebase/storage"
+import { getStorage } from "@firebase/storage";
 import { initializeApp } from "firebase/app";
-
 
 const firebaseConfig = {
   apiKey: "AIzaSyBBLdSyf2SvJjiO5a7hcv6eEU8eH-h3Ofk",
@@ -9,7 +8,7 @@ const firebaseConfig = {
   storageBucket: "pokedex-haru.appspot.com",
   messagingSenderId: "866441621052",
   appId: "1:866441621052:web:c805b837d80cea6fa09d39",
-  measurementId: "G-NNERWZYLV7"
+  measurementId: "G-NNERWZYLV7",
 };
 
 const app = initializeApp(firebaseConfig);
