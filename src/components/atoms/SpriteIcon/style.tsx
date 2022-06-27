@@ -1,8 +1,9 @@
 import styled from "styled-components";
+import { Englishtype } from "../../../types/type";
 import { TYPE_COLOR } from "../../../styles/color";
 
 export const IconWrapper = styled.a<{
-  type: keyof typeof TYPE_COLOR | "ERROR";
+  type: Englishtype;
 }>`
   background-color: ${({ type }) =>
     type !== "ERROR" ? `${TYPE_COLOR[type]};` : `transparent;`};
