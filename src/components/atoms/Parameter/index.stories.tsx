@@ -1,7 +1,6 @@
 import React from "react";
 import { Parameter } from "./index";
 import Data from "../../../data/pokemon-data.json";
-import { ConvertTypeEnglish } from "../../../util/Convert";
 
 export default {
   title: "atoms/Parameter",
@@ -9,7 +8,6 @@ export default {
 };
 
 export const Basic = () => {
-  const pokemonNo = 20;
-
-  return <Parameter types={Data[pokemonNo].types} Englishtypes={Englishtypes} />;
+  const pokemonNo = 160;
+  return <Parameter status={Data[pokemonNo].stats} />;
 };
