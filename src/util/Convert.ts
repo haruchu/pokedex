@@ -63,3 +63,31 @@ export const ConvertTypeEnglish = (type: string) => {
   }
   return englishType;
 };
+
+export const ConvertStatusJapanese = (status: string) => {
+  let JapaneseStatus;
+  switch (status) {
+    case "hp":
+      JapaneseStatus = "HP";
+      break;
+    case "attack":
+      JapaneseStatus = "攻撃";
+      break;
+    case "defence":
+      JapaneseStatus = "防御";
+      break;
+    case "spAttack":
+      JapaneseStatus = "特攻";
+      break;
+    case "spDefence":
+      JapaneseStatus = "特防";
+      break;
+    case "speed":
+      JapaneseStatus = "素早さ";
+      break;
+    default:
+      JapaneseStatus = "エラー";
+      break;
+  }
+  return JapaneseStatus;
+};
