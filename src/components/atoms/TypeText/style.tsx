@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Englishtype } from "../../../types/type";
+import { EnglishType } from "../../../types/type";
 import { TYPE_COLOR } from "../../../styles/color";
 import { phone } from "../../../valiables/BreakPoint";
 
@@ -18,7 +18,7 @@ export const TextWrapper = styled.div`
   background-color: white;
 `;
 
-const Text = styled.span<{ textColor: Englishtype }>`
+const Text = styled.span<{ textColor: EnglishType }>`
   color: ${({ textColor }) =>
     textColor !== "ERROR" ? `${TYPE_COLOR[textColor]};` : `transparent;`};
   text-align: center;

@@ -1,10 +1,10 @@
 import React from "react";
 import { ImageWrapper } from "./style";
-import { Englishtype } from "../../../types/type";
+import { EnglishType } from "../../../types/type";
 
 type ProfileImageProps = {
   ImagePath: string;
-  type: Englishtype;
+  type: EnglishType;
 };
 
 export const ProfileImage = ({ ImagePath, type }: ProfileImageProps) => {

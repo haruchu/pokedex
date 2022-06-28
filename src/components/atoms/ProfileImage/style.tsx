@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import { Englishtype } from "../../../types/type";
+import { EnglishType } from "../../../types/type";
 import { TYPE_COLOR } from "../../../styles/color";
 import { phone, tablet } from "../../../valiables/BreakPoint";
 
-export const ImageWrapper = styled.div<{ type: Englishtype }>`
+export const ImageWrapper = styled.div<{ type: EnglishType }>`
   background-color: ${({ type }) =>
     type !== "ERROR" ? `${TYPE_COLOR[type]};` : `transparent;`};
   width: 400px;

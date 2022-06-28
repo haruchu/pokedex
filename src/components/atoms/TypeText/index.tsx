@@ -1,20 +1,20 @@
 import React from "react";
-import { Englishtype } from "../../../types/type";
+import { EnglishType } from "../../../types/type";
 import { MainTypeText, SubTypeText, TextWrapper } from "./style";
 
 type TypeTextProps = {
   types: string[];
-  Englishtypes: Englishtype[];
+  EnglishTypes: EnglishType[];
 };
 
-export const TypeText = ({ types, Englishtypes }: TypeTextProps) => {
+export const TypeText = ({ types, EnglishTypes }: TypeTextProps) => {
   return (
     <TextWrapper>
       {types.map((type, index) =>
         index == 0 ? (
-          <MainTypeText textColor={Englishtypes[index]}>{type}</MainTypeText>
+          <MainTypeText textColor={EnglishTypes[index]}>{type}</MainTypeText>
         ) : (
-          <SubTypeText textColor={Englishtypes[index]}>{type}</SubTypeText>
+          <SubTypeText textColor={EnglishTypes[index]}>{type}</SubTypeText>
         )
       )}
     </TextWrapper>

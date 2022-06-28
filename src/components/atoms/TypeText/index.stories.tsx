@@ -15,5 +15,5 @@ export const Basic = () => {
   });
   console.log(Englishtypes);
 
-  return <TypeText types={Data[pokemonNo].types} Englishtypes={Englishtypes} />;
+  return <TypeText types={Data[pokemonNo].types} EnglishTypes={Englishtypes} />;
 };

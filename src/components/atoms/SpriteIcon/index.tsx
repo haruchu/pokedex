@@ -1,12 +1,12 @@
 import React from "react";
 import { IconWrapper } from "./style";
-import { Englishtype } from "../../../types/type";
+import { EnglishType } from "../../../types/type";
 
 type SpriteIconProps = {
   // firebase strageへの画像パスをPropsで渡す
   SpriteImgPath: string;
   // 英語変換されたタイプ
-  type: Englishtype;
+  type: EnglishType;
 };
 
 export const SpriteIcon = ({ SpriteImgPath, type }: SpriteIconProps) => {
