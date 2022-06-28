@@ -2,12 +2,12 @@ import React from "react";
 import { Englishtype } from "../../../types/type";
 import { MainTypeText, SubTypeText, TextWrapper } from "./style";
 
-type typeTextProps = {
+type TypeTextProps = {
   types: string[];
   Englishtypes: Englishtype[];
 };
 
-export const TypeText = ({ types, Englishtypes }: typeTextProps) => {
+export const TypeText = ({ types, Englishtypes }: TypeTextProps) => {
   return (
     <TextWrapper>
       {types.map((type, index) =>

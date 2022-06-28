@@ -1,14 +1,14 @@
 import React from "react";
 import { Name, Number, TextWrapper } from "./style";
 
-type nameTextProps = {
+type NameTextProps = {
   no: number;
   name: string;
   // firebase strageへの画像パスをPropsで渡す
   SpriteImgPath: string;
 };
 
-export const NameText = ({ no, name, SpriteImgPath }: nameTextProps) => {
+export const NameText = ({ no, name, SpriteImgPath }: NameTextProps) => {
   return (
     <TextWrapper>
       <Number>図鑑番号：{no}</Number>
