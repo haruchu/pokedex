@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { SpriteIcon } from "./index";
-import Data from "../../../data/pokemon-data.json";
+import Data from "../../../data/pokemonData.json";
 import { getDownloadURL, ref } from "firebase/storage";
 import { storage } from "../../../FirebaseConfig";
 import { ConvertTypeEnglish } from "../../../util/Convert";
@@ -13,7 +13,7 @@ export default {
 export const Basic = () => {
   const [image, setImage] = useState("");
   const pokemonNo = 0;
-  const fileName = ("000" + Data[pokemonNo].no).slice(-3) + "MS.png";
+  const fileName = ("000" + Data[pokemonNo].id).slice(-3) + "MS.png";
   const gsReference = ref(
     storage,
     "gs://pokedex-haru.appspot.com/sprites/" + fileName
@@ -27,7 +27,7 @@ export const Basic = () => {
   return (
     <SpriteIcon
       SpriteImgPath={image}
-      type={ConvertTypeEnglish(Data[pokemonNo].types[0])}
+      type={ConvertTypeEnglish(Data[pokemonNo].type[0])}
     />
   );
 };

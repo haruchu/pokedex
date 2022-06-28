@@ -1,13 +1,12 @@
 import styled from "styled-components";
 import { EnglishType } from "../../../types/type";
 import { TYPE_COLOR } from "../../../styles/color";
-import { phone } from "valiables/BreakPoint";
+import { phone } from "../../../valiables/BreakPoint";
 
 export const IconWrapper = styled.a<{
   type: EnglishType;
 }>`
-  background-color: ${({ type }) =>
-    type !== "ERROR" ? `${TYPE_COLOR[type]};` : `transparent;`};
+  background-color: ${({ type }) =>`${TYPE_COLOR[type]};`};
   width: 100px;
   height: 100px;
   & img {

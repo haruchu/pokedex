@@ -19,8 +19,7 @@ export const TextWrapper = styled.div`
 `;
 
 const Text = styled.span<{ textColor: EnglishType }>`
-  color: ${({ textColor }) =>
-    textColor !== "ERROR" ? `${TYPE_COLOR[textColor]};` : `transparent;`};
+  color: ${({ textColor }) =>`${TYPE_COLOR[textColor]};`};
   text-align: center;
 `;
 

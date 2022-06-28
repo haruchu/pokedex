@@ -1,7 +1,7 @@
 import React from "react";
 import { TypeText } from "./index";
-import Data from "../../../data/pokemon-data.json";
-import { ConvertTypeEnglish } from "../../../util/Convert";
+import Data from "../../../data/pokemonData.json";
+import { ConvertTypeEnglish, ConvertTypeJapanese } from "../../../util/Convert";
 
 export default {
   title: "Parts/TypeText",
@@ -10,10 +10,13 @@ export default {
 
 export const Basic = () => {
   const pokemonNo = 20;
-  const Englishtypes = Data[pokemonNo].types.map((type) => {
+  const EnglishTypes = Data[pokemonNo].type.map((type) => {
     return ConvertTypeEnglish(type);
   });
-  console.log(Englishtypes);
 
-  return <TypeText types={Data[pokemonNo].types} EnglishTypes={Englishtypes} />;
+  const JapaneseTypes = Data[pokemonNo].type.map((type) => {
+    return ConvertTypeJapanese(type);
+  });
+
+  return <TypeText types={JapaneseTypes} EnglishTypes={EnglishTypes} />;
 };
