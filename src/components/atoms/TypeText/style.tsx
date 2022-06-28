@@ -12,6 +12,7 @@ export const TextWrapper = styled.div`
   border: 2px solid black;
   background-color: white;
 `;
+
 const Text = styled.span<{ textColor: Englishtype }>`
   color: ${({ textColor }) =>
     textColor !== "ERROR" ? `${TYPE_COLOR[textColor]};` : `transparent;`};
