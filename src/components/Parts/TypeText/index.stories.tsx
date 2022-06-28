@@ -4,7 +4,7 @@ import Data from "../../../data/pokemon-data.json";
 import { ConvertTypeEnglish } from "../../../util/Convert";
 
 export default {
-  title: "atoms/TypeText",
+  title: "Parts/TypeText",
   component: TypeText,
 };
 
