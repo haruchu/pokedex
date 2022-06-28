@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { ListPageWrapper } from "./style";
-import Data from "../data/pokemon-data.json";
+import Data from "../data/pokemonData.json";
 import { SpriteIcon } from "../components/Parts/SpriteIcon";
 import { ConvertTypeEnglish } from "../util/Convert";
 import InfiniteScroll  from "react-infinite-scroller"
@@ -30,7 +30,7 @@ export const ListPage = () => {
         <SpriteIcon
           key={index}
           SpriteImgPath={fetchSpritePath(value)}
-          type={ConvertTypeEnglish(Data[value].types[0])}
+          type={ConvertTypeEnglish(Data[value - 1].type[0])}
       />
       ))}
     </div>
