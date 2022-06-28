@@ -1,22 +1,22 @@
 import React, { useState } from "react";
-import { SpriteIcon } from "./index";
+import { ProfileImage } from "./index";
 import Data from "../../../data/pokemon-data.json";
 import { getDownloadURL, ref } from "firebase/storage";
 import { storage } from "../../../FirebaseConfig";
 import { ConvertTypeEnglish } from "../../../util/Convert";
 
 export default {
-  title: "atoms/SpriteIcon",
-  component: SpriteIcon,
+  title: "Parts/ProfileImage",
+  component: ProfileImage,
 };
 
 export const Basic = () => {
   const [image, setImage] = useState("");
   const pokemonNo = 0;
-  const fileName = ("000" + Data[pokemonNo].no).slice(-3) + "MS.png";
+  const fileName = ("000" + Data[pokemonNo].no).slice(-3) + ".png";
   const gsReference = ref(
     storage,
-    "gs://pokedex-haru.appspot.com/sprites/" + fileName
+    "gs://pokedex-haru.appspot.com/images/" + fileName
   );
   getDownloadURL(gsReference)
     .then((url) => {
@@ -25,8 +25,8 @@ export const Basic = () => {
     .catch((err) => console.log(err));
 
   return (
-    <SpriteIcon
-      SpriteImgPath={image}
+    <ProfileImage
+      ImagePath={image}
       type={ConvertTypeEnglish(Data[pokemonNo].types[0])}
     />
   );

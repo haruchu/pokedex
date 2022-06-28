@@ -3,7 +3,7 @@ import { Parameter } from "./index";
 import Data from "../../../data/pokemon-data.json";
 
 export default {
-  title: "atoms/Parameter",
+  title: "Parts/Parameter",
   component: Parameter,
 };
 

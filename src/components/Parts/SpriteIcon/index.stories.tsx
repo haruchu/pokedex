@@ -1,17 +1,18 @@
 import React, { useState } from "react";
-import { NameText } from "./index";
+import { SpriteIcon } from "./index";
 import Data from "../../../data/pokemon-data.json";
 import { getDownloadURL, ref } from "firebase/storage";
 import { storage } from "../../../FirebaseConfig";
+import { ConvertTypeEnglish } from "../../../util/Convert";
 
 export default {
-  title: "atoms/NameText",
-  component: NameText,
+  title: "Parts/SpriteIcon",
+  component: SpriteIcon,
 };
 
 export const Basic = () => {
   const [image, setImage] = useState("");
-  const pokemonNo = 20;
+  const pokemonNo = 0;
   const fileName = ("000" + Data[pokemonNo].no).slice(-3) + "MS.png";
   const gsReference = ref(
     storage,
@@ -24,10 +25,9 @@ export const Basic = () => {
     .catch((err) => console.log(err));
 
   return (
-    <NameText
-      no={Data[pokemonNo].no}
-      name={Data[pokemonNo].name}
+    <SpriteIcon
       SpriteImgPath={image}
+      type={ConvertTypeEnglish(Data[pokemonNo].types[0])}
     />
   );
 };
