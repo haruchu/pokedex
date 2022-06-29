@@ -18,7 +18,7 @@ export const ConvertTypeEnglish = (type: string) => {
     case "Grass":
       englishType = "GRASS";
       break;
-    case "ice":
+    case "Ice":
       englishType = "ICE";
       break;
     case "Fighting":
