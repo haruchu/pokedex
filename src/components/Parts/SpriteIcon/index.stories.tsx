@@ -28,6 +28,7 @@ export const Basic = () => {
     <SpriteIcon
       SpriteImgPath={image}
       type={ConvertTypeEnglish(Data[pokemonNo].type[0])}
+      ProfilePath={"#"}
     />
   );
 };

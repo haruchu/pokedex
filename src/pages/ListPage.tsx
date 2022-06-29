@@ -35,6 +35,7 @@ export const ListPage = () => {
           key={index}
           SpriteImgPath={fetchSpritePath(value)}
           type={ConvertTypeEnglish(Data[value - 1].type[0])}
+          ProfilePath={`/${value}`}
         />
       ))}
     </div>

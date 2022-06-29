@@ -9,3 +9,5 @@ export const ListPageWrapper = styled(PageWrapper)`
   align-items: center;
   justify-content: center;
 `;
+
+export const ProfileWrapper = styled(PageWrapper)``;

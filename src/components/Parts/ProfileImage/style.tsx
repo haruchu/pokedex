@@ -9,6 +9,10 @@ export const ImageWrapper = styled.div<{ type: EnglishType }>`
   height: 400px;
   padding: 40px;
   border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
 
   ${tablet`
       width: 300px;

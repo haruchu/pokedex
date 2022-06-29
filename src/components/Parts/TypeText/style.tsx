@@ -16,6 +16,9 @@ export const TextWrapper = styled.div`
   `}
   border: 2px solid black;
   background-color: white;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 `;
 
 const Text = styled.span<{ textColor: EnglishType }>`
