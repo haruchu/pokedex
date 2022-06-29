@@ -3,16 +3,18 @@ import { ListPageWrapper } from "./style";
 import Data from "../data/pokemonData.json";
 import { SpriteIcon } from "../components/Parts/SpriteIcon";
 import { ConvertTypeEnglish } from "../util/Convert";
-import InfiniteScroll  from "react-infinite-scroller"
+import InfiniteScroll from "react-infinite-scroller";
 
 const fetchSpritePath = (no: number) => {
   const pokemonNo = no;
   const fileName = ("000" + pokemonNo).slice(-3) + "MS.png";
   const bucketName = "pokedex-haru.appspot.com";
   const filePath = `sprites/${fileName}`;
-  const spritePath = `https://firebasestorage.googleapis.com/v0/b/${bucketName}/o/${encodeURIComponent(filePath)}?alt=media`;
+  const spritePath = `https://firebasestorage.googleapis.com/v0/b/${bucketName}/o/${encodeURIComponent(
+    filePath
+  )}?alt=media`;
   return spritePath;
-}
+};
 
 export const ListPage = () => {
   const [list, setList] = useState([]);
@@ -20,9 +22,11 @@ export const ListPage = () => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const loadMore = (page: any) => {
     if (list.length <= Data.length) {
-      setList([...list, page]);
+      setTimeout(() => {
+        setList([...list, page]);
+      }, 10);
     }
-  }
+  };
 
   const items = (
     <div>
@@ -31,16 +35,12 @@ export const ListPage = () => {
           key={index}
           SpriteImgPath={fetchSpritePath(value)}
           type={ConvertTypeEnglish(Data[value - 1].type[0])}
-      />
+        />
       ))}
     </div>
   );
 
-  const loader = (
-    <h2>
-      Loading...
-    </h2>
-  );
+  const loader = <h2>Loading...</h2>;
 
   return (
     <ListPageWrapper>

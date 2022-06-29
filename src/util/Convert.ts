@@ -120,7 +120,7 @@ export const ConvertTypeJapanese = (type: string) => {
       break;
   }
   return japaneseType;
-}
+};
 
 export const ConvertStatusJapanese = (status: string) => {
   let JapaneseStatus;

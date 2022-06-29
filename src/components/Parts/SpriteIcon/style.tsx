@@ -6,7 +6,7 @@ import { phone } from "../../../valiables/BreakPoint";
 export const IconWrapper = styled.a<{
   type: EnglishType;
 }>`
-  background-color: ${({ type }) =>`${TYPE_COLOR[type]};`};
+  background-color: ${({ type }) => `${TYPE_COLOR[type]};`};
   width: 100px;
   height: 100px;
   & img {

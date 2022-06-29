@@ -19,7 +19,7 @@ export const TextWrapper = styled.div`
 `;
 
 const Text = styled.span<{ textColor: EnglishType }>`
-  color: ${({ textColor }) =>`${TYPE_COLOR[textColor]};`};
+  color: ${({ textColor }) => `${TYPE_COLOR[textColor]};`};
   text-align: center;
 `;
 

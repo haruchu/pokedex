@@ -4,7 +4,7 @@ import { TYPE_COLOR } from "../../../styles/color";
 import { phone, tablet } from "../../../valiables/BreakPoint";
 
 export const ImageWrapper = styled.div<{ type: EnglishType }>`
-  background-color: ${({ type }) =>`${TYPE_COLOR[type]};`};
+  background-color: ${({ type }) => `${TYPE_COLOR[type]};`};
   width: 400px;
   height: 400px;
   padding: 40px;
