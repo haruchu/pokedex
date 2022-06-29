@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { phone, tablet } from "valiables/BreakPoint";
+import { phone, tablet } from "../../../valiables/BreakPoint";
 
 export const StatusWrapper = styled.div`
   width: 600px;
