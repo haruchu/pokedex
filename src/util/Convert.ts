@@ -79,7 +79,7 @@ export const ConvertTypeJapanese = (type: string) => {
     case "Grass":
       japaneseType = "くさ";
       break;
-    case "ice":
+    case "Ice":
       japaneseType = "こおり";
       break;
     case "Fighting":
