@@ -1,16 +1,20 @@
 import styled from "styled-components";
-import { phone } from "../../../valiables/BreakPoint";
+import { phone, tablet } from "../../../valiables/BreakPoint";
 
 export const TextWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  width: 200px;
+  width: 500px;
   padding: 20px;
+
+  ${tablet`
+      width: 200px;
+      padding: 10px;
+  `}
   ${phone`
       width: 100px;
-      padding: 10px;
   `}
   border: 2px solid black;
   background-color: white;
@@ -26,18 +30,35 @@ const Text = styled.span`
 `;
 
 export const Number = styled(Text)`
-  font-size: 20px;
+  font-size: 40px;
   font-weight: 600;
+
+  ${tablet`
+      font-size: 20px;
+  `}
   ${phone`
       font-size: 10px;
   `}
 `;
 
 export const Name = styled(Text)`
-  font-size: 30px;
+  font-size: 60px;
   font-weight: 900;
   justify-content: flex-end;
+  & img {
+    width: 100px;
+  }
+
+  ${tablet`
+      font-size: 30px;
+      & img {
+        width: 50px;
+      }
+  `}
   ${phone`
-      font-size: 16px;
+      font-size: 12px;
+      & img {
+        width: 30px;
+      }
   `}
 `;

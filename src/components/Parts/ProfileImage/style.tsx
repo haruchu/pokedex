@@ -15,13 +15,13 @@ export const ImageWrapper = styled.div<{ type: EnglishType }>`
   transform: translateY(-50%) translateX(-50%);
 
   ${tablet`
-      width: 300px;
-      height: 300px;
+      width: 450px;
+      height: 450px;
   `}
 
   ${phone`
-      width: 100px;
-      height: 100px;
+      width: 220px;
+      height: 220px;
       padding: 20px;
   `}
 
