@@ -1,8 +1,13 @@
 import React from "react";
+import { Router } from "./Router";
+import { BrowserRouter } from "react-router-dom";
 import { createRoot } from "react-dom/client";
-import { Example } from "./components/example";
 
 const root = createRoot(document.getElementById("root") as Element);
-const element = <Example text={"example"} />;
+const element = (
+  <BrowserRouter>
+    <Router />
+  </BrowserRouter>
+);
 
 root.render(element);

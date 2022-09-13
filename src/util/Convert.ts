@@ -1,88 +1,146 @@
 import { TYPE_COLOR } from "styles/color";
 
 export const ConvertTypeEnglish = (type: string) => {
-  let englishType: keyof typeof TYPE_COLOR | "ERROR";
+  let englishType: keyof typeof TYPE_COLOR;
   switch (type) {
-    case "ノーマル":
+    case "Normal":
       englishType = "NORMAL";
       break;
-    case "ほのお":
+    case "Fire":
       englishType = "FIRE";
       break;
-    case "みず":
+    case "Water":
       englishType = "WATER";
       break;
-    case "でんき":
+    case "Electric":
       englishType = "ELECTRIC";
       break;
-    case "くさ":
+    case "Grass":
       englishType = "GRASS";
       break;
-    case "こおり":
+    case "Ice":
       englishType = "ICE";
       break;
-    case "かくとう":
+    case "Fighting":
       englishType = "FIGHTING";
       break;
-    case "どく":
+    case "Poison":
       englishType = "POISON";
       break;
-    case "じめん":
+    case "Ground":
       englishType = "GROUND";
       break;
-    case "ひこう":
+    case "Flying":
       englishType = "FLYING";
       break;
-    case "エスパー":
+    case "Psychic":
       englishType = "PSYCHIC";
       break;
-    case "むし":
+    case "Bug":
       englishType = "BUG";
       break;
-    case "いわ":
+    case "Rock":
       englishType = "ROCK";
       break;
-    case "ゴースト":
+    case "Ghost":
       englishType = "GHOST";
       break;
-    case "ドラゴン":
+    case "Dragon":
       englishType = "DRAGON";
       break;
-    case "あく":
+    case "Dark":
       englishType = "DARK";
       break;
-    case "はがね":
+    case "Steel":
       englishType = "STEEL";
       break;
-    case "フェアリー":
+    case "Fairy":
       englishType = "FAIRY";
-      break;
-    default:
-      englishType = "ERROR";
       break;
   }
   return englishType;
 };
 
+export const ConvertTypeJapanese = (type: string) => {
+  let japaneseType: string;
+  switch (type) {
+    case "Normal":
+      japaneseType = "ノーマル";
+      break;
+    case "Fire":
+      japaneseType = "ほのお";
+      break;
+    case "Water":
+      japaneseType = "みず";
+      break;
+    case "Electric":
+      japaneseType = "でんき";
+      break;
+    case "Grass":
+      japaneseType = "くさ";
+      break;
+    case "Ice":
+      japaneseType = "こおり";
+      break;
+    case "Fighting":
+      japaneseType = "かくとう";
+      break;
+    case "Poison":
+      japaneseType = "どく";
+      break;
+    case "Ground":
+      japaneseType = "じめん";
+      break;
+    case "Flying":
+      japaneseType = "ひこう";
+      break;
+    case "Psychic":
+      japaneseType = "エスパー";
+      break;
+    case "Bug":
+      japaneseType = "むし";
+      break;
+    case "Rock":
+      japaneseType = "いわ";
+      break;
+    case "Ghost":
+      japaneseType = "ゴースト";
+      break;
+    case "Dragon":
+      japaneseType = "ドラゴン";
+      break;
+    case "Dark":
+      japaneseType = "あく";
+      break;
+    case "Steel":
+      japaneseType = "はがね";
+      break;
+    case "Fairy":
+      japaneseType = "フェアリー";
+      break;
+  }
+  return japaneseType;
+};
+
 export const ConvertStatusJapanese = (status: string) => {
   let JapaneseStatus;
   switch (status) {
-    case "hp":
+    case "HP":
       JapaneseStatus = "HP";
       break;
-    case "attack":
+    case "Attack":
       JapaneseStatus = "攻撃";
       break;
-    case "defence":
+    case "Defense":
       JapaneseStatus = "防御";
       break;
-    case "spAttack":
+    case "Sp. Attack":
       JapaneseStatus = "特攻";
       break;
-    case "spDefence":
+    case "Sp. Defense":
       JapaneseStatus = "特防";
       break;
-    case "speed":
+    case "Speed":
       JapaneseStatus = "素早さ";
       break;
     default:
